@@ -1,14 +1,274 @@
+.navbar{
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  
+}
+
+/* NAVBAR STYLING STARTS */
+
+ /* NAVBAR MENU */
+ #opciones {
+  text-align: right;
+  display: flex;
+  margin: auto;
+  justify-content: right;
+  align-items: center;
+  
+ }
+#opciones a{
+  color: rgb(238, 255, 0);
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Neucha", cursive;
+  padding: 5px 30px;
+
+}
+ #opciones a:hover {
+  background-color: rgb(255, 145, 0);
+  border-radius: 5px;
+  transition: 0.3s ease;
+ }
+
+ /* DROPDOWN MENU */
+ .dropdown {
+  background-color: #36f;
+  padding: 1em 0;
+  display: none;
+  border-radius: 8px;
+  top: 35px;
+ }
+ .dropdown a + a {
+  margin-top: 10px;
+ }
+ .dropdown a {
+  padding: 0.5em 1em;
+  width: 8em;
+  text-align: center;
+ }
+ .dropdown a:hover {
+  background-color: #36f;
+ }
+ .services:hover .dropdown {
+  display: block;
+ }
+  
+ .fundador{
+  text-align: center;
+ }
+ 
+
+/*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+  display: none;
+ } 
+ /*HAMBURGER MENU*/
+ .hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+ }
+ /* APPLYING MEDIA QUERIES */
+ @media (max-width: 768px) {
+ .menu { 
+  display:none;
+  background-color:#36f;
+  right: 0;
+  left: 0;
+  text-align: center;
+  padding: 16px 0;
+ }
+ .menu li:hover {
+  display: inline-block;
+  background-color:#36f;
+  transition: 0.3s ease;
+ }
+ .menu li + li {
+  margin-top: 12px;
+ }
+ input[type=checkbox]:checked ~ .menu{
+  display: block;
+ }
+ .hamburger {
+  display: block;
+ }
+ .dropdown {
+  left: 50%;
+  top: 30px;
+  transform: translateX(35%);
+ }
+ .dropdown li:hover {
+  background-color: #36f;
+ }
+ }
+ .banner{
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+
+.contenido{
+  position: relative;
+  top:150px;
+  background: #ffffff;
+  
+}
+.encabezado{
+  font-family: "Fredoka One", cursive;
+  font-size: 30px
+  
+}
+.titulo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Fredoka One", cursive;
+  font-size: 30px
+  
+}
+@import url(https://fonts.googleapis.com/css?family=Signika:700,300,600);
+
+h1 {
+  font-size:5em;
+  font:bold 7.5vw/1.6 'Signika', sans-serif;
+  user-select:none;
+  left: 150px;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  top: 20px;
+}
+ 
+ h1 span { display:inline-block; animation:float .2s ease-in-out infinite; }
+  @keyframes float {
+   0%,100%{ transform:none; }
+   33%{ transform:translateY(-1px) rotate(-2deg); }
+   66%{ transform:translateY(1px) rotate(2deg); }
+ }
+ .nombre:hover span { animation:bounce .6s; }
+ @keyframes bounce {
+   0%,100%{ transform:translate(0); }
+   25%{ transform:rotateX(20deg) translateY(2px) rotate(-3deg); }
+   50%{ transform:translateY(-20px) rotate(3deg) scale(1.1);  }
+ }
+ 
+ span:nth-child(4n) { color:hsl(50, 75%, 55%); text-shadow:1px 1px hsl(50, 75%, 45%), 2px 2px hsl(50, 45%, 45%), 3px 3px hsl(50, 45%, 45%), 4px 4px hsl(50, 75%, 45%); }
+ span:nth-child(4n-1) { color:hsl(135, 35%, 55%); text-shadow:1px 1px hsl(135, 35%, 45%), 2px 2px hsl(135, 35%, 45%), 3px 3px hsl(135, 35%, 45%), 4px 4px hsl(135, 35%, 45%); }
+ span:nth-child(4n-2) { color:hsl(155, 35%, 60%); text-shadow:1px 1px hsl(155, 25%, 50%), 2px 2px hsl(155, 25%, 50%), 3px 3px hsl(155, 25%, 50%), 4px 4px hsl(140, 25%, 50%); }
+ span:nth-child(4n-3) { color:hsl(30, 65%, 60%); text-shadow:1px 1px hsl(30, 45%, 50%), 2px 2px hsl(30, 45%, 50%), 3px 3px hsl(30, 45%, 50%), 4px 4px hsl(30, 45%, 50%); }
+ 
+ h1 span:nth-child(2){ animation-delay:.05s; }
+ h1 span:nth-child(3){ animation-delay:.1s; }
+ h1 span:nth-child(4){ animation-delay:.15s; }
+ h1 span:nth-child(5){ animation-delay:.2s; }
+ h1 span:nth-child(6){ animation-delay:.25s; }
+ h1 span:nth-child(7){ animation-delay:.3s; }
+ h1 span:nth-child(8){ animation-delay:.35s; }
+ h1 span:nth-child(9){ animation-delay:.4s; }
+ h1 span:nth-child(10){ animation-delay:.45s; }
+ h1 span:nth-child(11){ animation-delay:.5s; }
+ h1 span:nth-child(12){ animation-delay:.55s; }
+ h1 span:nth-child(13){ animation-delay:.6s; }
+ h1 span:nth-child(14){ animation-delay:.65s; }
+
+ .carrusel{
+  position: relative;
+}
+.carousel{
+  transition-duration: 2s;
+  opacity:1 ;
+  
+}
+
+#LeCarrusel{
+  font-size: 40px;
+  font-family: 'Permanent Marker', cursive;
+}
+.footer{
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Fredoka One", cursive;
+  padding-top: 40px;
+  top: 100px;
+  position: relative;
+}
+
+.icons-container, .footer-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 0.1rem;
+ 
+}
+
+.social-icon{
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  border: 1px solid rgb(255, 255, 255);
+  background-image:url(../img/github.png);
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  margin-left:  0.5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0%;
+  
+}
+
+.social-icon:hover{
+  background-color: rgb(247, 234, 206);
+}
+
+.social-icon:nth-of-type(2){
+  background-image: url(../img/gorjeo.png);
+}
+
+.social-icon:nth-of-type(3){
+  background-image: url(../img/linkedin.png);
+}
+
+
+.footer-container{
+  list-style-type: none ;
+  color: rgb(247, 242, 242);
+  font-size: 18rem;
+}
+
+.item{
+  margin: 1rem 1.5rem;
+  cursor: pointer;
+  font-size: 2vmin;
+}
+
+.item:hover{
+  opacity: 1;
+  color: rgb(255, 255, 255);
+}
+
+.copyright{
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-shadow: #ffffff;
+
+}
+
+/*  footer  fin */
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 #textPlayas{
 position: relative;
 justify-items: center;
 align-items: center;
 justify-content: center;
-margin: 60px;
-padding: 80px;
+margin: 20px;
+padding: 20px;
 text-align:justify;
-padding-bottom: 20px;
-margin-bottom: 20px;
 font-family: "Ubuntu",cursive;
 
 }
@@ -278,4 +538,19 @@ hr{
   position: relative;
   margin-bottom: 100px;
 
+}
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+#titlayas{
+  font-family: "Fredoka One", cursive;
+ justify-content: center;
+ align-items: center;
+  text-align: center;
+  display: flex;
+  justify-items: center;
+}
+#parrPlayas{
+  text-align: justify;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
